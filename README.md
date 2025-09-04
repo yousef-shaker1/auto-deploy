@@ -12,11 +12,11 @@ jobs:
     name: Deploy via SSH
     runs-on: ubuntu-latest
 
-  steps:
+    steps:
     - name: Checkout code
       uses: actions/checkout@v3
 
-   - name: Deploy to Hostinger via SSH
+    - name: Deploy to Hostinger via SSH
       uses: appleboy/ssh-action@v1.0.0
       with:
         host: 45.87.81.237
